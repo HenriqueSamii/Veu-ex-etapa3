@@ -1,17 +1,19 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <Segundos />
+    <Contador />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Segundos from './components/Segundos.vue'
+import Contador from './components/Contador.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Segundos,
+    Contador
   }
 }
 </script>
@@ -24,5 +26,12 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+  background-color: #2c3e50;
+  padding: 2em;
+  
 }
+#card{
+  background-color: ivory;
+}
+
 </style>
